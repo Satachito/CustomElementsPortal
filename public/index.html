@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang=ja>
+<head>
+<script src=./index.js type=module></script>
+
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+
+<title>CustomElements.org</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="./styles.css">
+
+<template	id=T_HOME	><h1 class=pad10>HOME PAGE			</h1></template>
+
+<template	id=T_404	><h1 class=pad10>404:Not found		</h1></template>
+</head>
+
+<body>
+<header>
+	<div style="display: inline-block"><div>CustomElements.org</div><div class=fs10>Discuss & share custom elements</div></div>
+	<select	id=LANGUAGE_S class=floatRight>
+		<option value=en>en:English	</option>
+		<option value=ja>ja:日本語	</option>
+	</select>
+	<button	id=USER_B		class=floatRight></button>
+	<button	id=HOME_B		class=floatRight><i class="fas fa-home"></i></button>
+</header>
+
+<search>
+	<input type=search>
+</search>
+
+<main></main>
+
+<footer style="font: 10px cursive">(C) SliP LLC, Tokyo</footer>
+
+<dialog	id=MY_D>
+	<i		class="fa fa-close floatRight"	></i>
+	<br>
+	<div	id=EMAIL 		class=center	></div>
+	<div	id=DISPLAY_NAME	class=center	></div>
+	<button	id=LOGOUT_B						></button>
+	<br>
+	<hr>
+	<button	id=DELETE_B		class=dange		></button>
+</dialog>
+
+</body>
+</html>
